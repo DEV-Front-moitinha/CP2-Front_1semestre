@@ -42,7 +42,3 @@ equipes.txt
 - Pagina sobre com historia do restaurante.
 - Formulario de contato com feedback dinamico.
 - Footer com telefone, email, rede social e copyright dinamico.
-
-## GitHub Pages
-
-Depois de publicar o projeto, ative o GitHub Pages nas configuracoes do repositorio e preencha o link em `equipes.txt`.
