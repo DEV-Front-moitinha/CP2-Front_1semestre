@@ -253,6 +253,30 @@ a {
   padding: clamp(64px, 9vw, 112px) 0;
 }
 
+.page-hero {
+  width: min(var(--max-width), calc(100% - 36px));
+  margin: 0 auto;
+  padding: clamp(76px, 10vw, 128px) 0 clamp(42px, 7vw, 86px);
+  border-bottom: 1px solid var(--color-line-dark);
+}
+
+.page-hero h1 {
+  max-width: 920px;
+  margin: 0;
+  font-family: "Noto Serif JP", serif;
+  font-size: clamp(2.6rem, 7vw, 6rem);
+  line-height: 0.98;
+  letter-spacing: 0;
+}
+
+.page-hero p:not(.eyebrow) {
+  max-width: 720px;
+  margin: 24px 0 0;
+  color: #4d4d4d;
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
 .section-heading {
   max-width: 720px;
   margin-bottom: 34px;
@@ -349,6 +373,97 @@ a {
   font-size: 0.9rem;
 }
 
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.menu-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 340px;
+  padding: 24px;
+  color: var(--color-white);
+  background: var(--color-charcoal);
+  border: 1px solid var(--color-line-dark);
+}
+
+.menu-card:nth-child(even) {
+  color: var(--color-ink);
+  background: var(--color-white);
+}
+
+.menu-card:nth-child(even) p {
+  color: #565656;
+}
+
+.menu-card-symbol {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  aspect-ratio: 1;
+  margin-bottom: 42px;
+  font-family: "Noto Serif JP", serif;
+  font-size: 1.65rem;
+  border: 1px solid currentColor;
+}
+
+.menu-card strong {
+  margin-top: auto;
+  padding-top: 24px;
+  font-size: 1.45rem;
+}
+
+.table-section {
+  border-top: 1px solid var(--color-line-dark);
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  background: var(--color-white);
+  border: 1px solid var(--color-line-dark);
+  box-shadow: var(--shadow-soft);
+}
+
+table {
+  width: 100%;
+  min-width: 760px;
+  border-collapse: collapse;
+}
+
+caption {
+  padding: 18px;
+  text-align: left;
+  font-weight: 800;
+  color: var(--color-white);
+  background: var(--color-ink);
+}
+
+th,
+td {
+  padding: 18px;
+  text-align: left;
+  border-bottom: 1px solid var(--color-line-dark);
+}
+
+th {
+  color: var(--color-white);
+  background: var(--color-charcoal);
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+tbody tr:hover {
+  background: #f2eee5;
+}
+
+td:last-child {
+  font-weight: 800;
+  white-space: nowrap;
+}
+
 .site-footer {
   display: grid;
   grid-template-columns: 1fr auto auto;
@@ -410,6 +525,7 @@ a {
   }
 
   .feature-grid,
+  .menu-grid,
   .split-section,
   .site-footer {
     grid-template-columns: 1fr;
