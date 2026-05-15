@@ -83,9 +83,8 @@ a {
   height: 58px;
   object-fit: contain;
   padding: 4px;
-  background: var(--color-ink);
+  background: rgba(255, 255, 255, 0.04);
   border: 1px solid var(--color-line);
-  filter: invert(1) grayscale(1) contrast(1.08);
 }
 
 .brand-mark {
