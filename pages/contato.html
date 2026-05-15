@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contato do restaurante Nihon no kibo para reservas, mensagens e informacoes.">
+  <title>Contato | Nihon no kibo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Serif+JP:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../src/css/estilo.css">
+</head>
+<body>
+  <header class="site-header" data-header>
+    <a class="brand" href="../index.html" aria-label="Pagina inicial Nihon no kibo">
+      <span class="brand-mark" aria-hidden="true">日</span>
+      <span>
+        <strong>Nihon no kibo</strong>
+        <small>Restaurante japones</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" data-menu-toggle>
+      <span class="sr-only">Abrir menu</span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="primary-nav" id="primary-navigation" aria-label="Navegacao principal" data-nav>
+      <a href="../index.html" data-nav-link>Home</a>
+      <a href="portifolio.html" data-nav-link>Portifolio</a>
+      <a href="sobre.html" data-nav-link>Sobre</a>
+      <a href="contato.html" data-nav-link>Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero" aria-labelledby="contact-title">
+      <p class="eyebrow">Contato</p>
+      <h1 id="contact-title">Reserve uma mesa ou envie sua mensagem.</h1>
+      <p>Use o formulario para falar com a equipe. Retornamos com horarios disponiveis, informacoes sobre eventos e detalhes das experiencias do restaurante.</p>
+    </section>
+
+    <section class="section contact-layout" aria-labelledby="form-title">
+      <div class="contact-panel">
+        <p class="eyebrow">Canais</p>
+        <h2>Dados de contato</h2>
+        <ul class="contact-list">
+          <li>
+            <strong>Telefone</strong>
+            <a href="tel:+5511999999999">(11) 99999-9999</a>
+          </li>
+          <li>
+            <strong>Email</strong>
+            <a href="mailto:contato@nihonnokibo.com">contato@nihonnokibo.com</a>
+          </li>
+          <li>
+            <strong>Endereco</strong>
+            <span>Rua Sakura, 108 - Liberdade, Sao Paulo</span>
+          </li>
+          <li>
+            <strong>Redes sociais</strong>
+            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">@nihonnokibo</a>
+          </li>
+        </ul>
+      </div>
+
+      <form class="contact-form" aria-labelledby="form-title" data-contact-form>
+        <div>
+          <p class="eyebrow">Formulario</p>
+          <h2 id="form-title">Fale com o Nihon no kibo</h2>
+        </div>
+
+        <label for="nome">Nome</label>
+        <input id="nome" name="nome" type="text" autocomplete="name" placeholder="Seu nome" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" placeholder="seuemail@exemplo.com" required>
+
+        <label for="descricao">Descricao</label>
+        <textarea id="descricao" name="descricao" rows="6" placeholder="Conte se deseja reservar, pedir informacoes ou enviar uma sugestao." required></textarea>
+
+        <button class="button button-light form-button" type="submit">Enviar mensagem</button>
+        <p class="form-message" role="status" aria-live="polite" data-form-message></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>Nihon no kibo</strong>
+      <p>Rua Sakura, 108 - Liberdade, Sao Paulo</p>
+    </div>
+    <address>
+      <a href="tel:+5511999999999">(11) 99999-9999</a>
+      <a href="mailto:contato@nihonnokibo.com">contato@nihonnokibo.com</a>
+      <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+    </address>
+    <p>&copy; <span data-year></span> Nihon no kibo. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="../src/js/script.js"></script>
+</body>
+</html>
