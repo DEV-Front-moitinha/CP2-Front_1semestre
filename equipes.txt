@@ -1,7 +1,11 @@
 Equipe: preencher nome da equipe
 
-Integrantes:
-- Nome: preencher nome | RM: preencher RM
+Integrante/RM:
+Eduardo Bechara Medeiros Craveiro 571081
+Felipe Rabelo - RM 570340
+Gustavo Ferreira Tavares 569928
+Gustavo Moita de Lima 569180
+Ricardo Salmerón Paulino de Souza 572916
 
 Repositorio:
 https://github.com/DEV-Front-moitinha/CP2-Front_1semestre.git
