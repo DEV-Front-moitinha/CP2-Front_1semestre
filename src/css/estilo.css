@@ -516,6 +516,107 @@ td:last-child {
   background: currentColor;
 }
 
+.contact-layout {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.75fr) minmax(320px, 1fr);
+  gap: clamp(20px, 5vw, 56px);
+  align-items: start;
+}
+
+.contact-panel,
+.contact-form {
+  padding: clamp(24px, 4vw, 38px);
+  border: 1px solid var(--color-line-dark);
+}
+
+.contact-panel {
+  color: var(--color-white);
+  background: var(--color-ink);
+  box-shadow: var(--shadow-soft);
+}
+
+.contact-panel h2,
+.contact-form h2 {
+  margin: 0 0 24px;
+  font-family: "Noto Serif JP", serif;
+  font-size: clamp(1.9rem, 4vw, 3.2rem);
+  line-height: 1.05;
+}
+
+.contact-list {
+  display: grid;
+  gap: 18px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.contact-list li {
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contact-list strong,
+.contact-list a,
+.contact-list span {
+  display: block;
+}
+
+.contact-list strong {
+  margin-bottom: 6px;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.contact-list a,
+.contact-list span {
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.6;
+}
+
+.contact-form {
+  display: grid;
+  gap: 12px;
+  background: var(--color-white);
+}
+
+.contact-form label {
+  font-weight: 800;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px 16px;
+  border: 1px solid var(--color-line-dark);
+  border-radius: 0;
+  color: var(--color-ink);
+  background: #fbfaf6;
+  font: inherit;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 3px solid rgba(7, 7, 7, 0.18);
+  border-color: var(--color-ink);
+}
+
+.form-button {
+  width: fit-content;
+  margin-top: 8px;
+  color: var(--color-white);
+  background: var(--color-ink);
+}
+
+.form-message {
+  min-height: 24px;
+  margin: 0;
+  color: #3f3f3f;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
 .site-footer {
   display: grid;
   grid-template-columns: 1fr auto auto;
@@ -580,6 +681,7 @@ td:last-child {
   .menu-grid,
   .story-layout,
   .story-grid,
+  .contact-layout,
   .split-section,
   .site-footer {
     grid-template-columns: 1fr;
