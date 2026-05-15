@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portifolio do restaurante Nihon no kibo com pratos, experiencias, tabela de precos e promocoes.">
+  <title>Portifolio | Nihon no kibo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Serif+JP:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../src/css/estilo.css">
+</head>
+<body>
+  <header class="site-header" data-header>
+    <a class="brand" href="../index.html" aria-label="Pagina inicial Nihon no kibo">
+      <span class="brand-mark" aria-hidden="true">日</span>
+      <span>
+        <strong>Nihon no kibo</strong>
+        <small>Restaurante japones</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" data-menu-toggle>
+      <span class="sr-only">Abrir menu</span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="primary-nav" id="primary-navigation" aria-label="Navegacao principal" data-nav>
+      <a href="../index.html" data-nav-link>Home</a>
+      <a href="portifolio.html" data-nav-link>Portifolio</a>
+      <a href="sobre.html" data-nav-link>Sobre</a>
+      <a href="contato.html" data-nav-link>Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero" aria-labelledby="portfolio-title">
+      <p class="eyebrow">Portifolio</p>
+      <h1 id="portfolio-title">Pratos que mostram tecnica, tempo e respeito ao ingrediente.</h1>
+      <p>O cardapio combina entradas delicadas, combinados de sushi, pratos quentes e experiencias especiais para quem busca um jantar japones completo.</p>
+    </section>
+
+    <section class="section" aria-labelledby="menu-title">
+      <div class="section-heading">
+        <p class="eyebrow">Cards</p>
+        <h2 id="menu-title">Destaques do cardapio</h2>
+      </div>
+
+      <div class="menu-grid">
+        <article class="menu-card">
+          <span class="menu-card-symbol" aria-hidden="true">寿</span>
+          <h3>Omakase Kibo</h3>
+          <p>Degustacao com sashimis, niguiris, hot dish autoral e sobremesa leve de matcha.</p>
+          <strong>R$ 189,90</strong>
+        </article>
+        <article class="menu-card">
+          <span class="menu-card-symbol" aria-hidden="true">鮨</span>
+          <h3>Combinado Fuji</h3>
+          <p>24 pecas entre uramaki, hossomaki, niguiri, sashimi e jo especial da casa.</p>
+          <strong>R$ 139,90</strong>
+        </article>
+        <article class="menu-card">
+          <span class="menu-card-symbol" aria-hidden="true">麺</span>
+          <h3>Ramen Shiro</h3>
+          <p>Caldo cremoso, massa artesanal, ovo marinado, cebolinha e cogumelos salteados.</p>
+          <strong>R$ 64,90</strong>
+        </article>
+        <article class="menu-card">
+          <span class="menu-card-symbol" aria-hidden="true">茶</span>
+          <h3>Cha cerimonial</h3>
+          <p>Cha verde preparado na mesa com doce delicado de arroz e pasta de feijao azuki.</p>
+          <strong>R$ 32,90</strong>
+        </article>
+      </div>
+    </section>
+
+    <section class="section table-section" aria-labelledby="prices-title">
+      <div class="section-heading">
+        <p class="eyebrow">Precos e promocoes</p>
+        <h2 id="prices-title">Tabela especial da semana</h2>
+      </div>
+
+      <div class="table-wrapper">
+        <table>
+          <caption>Promocoes do restaurante Nihon no kibo</caption>
+          <thead>
+            <tr>
+              <th scope="col">Experiencia</th>
+              <th scope="col">Inclui</th>
+              <th scope="col">Dia</th>
+              <th scope="col">Valor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Festival Nihon</td>
+              <td>Rodizio premium com sashimi e pratos quentes</td>
+              <td>Terca e quarta</td>
+              <td>R$ 119,90</td>
+            </tr>
+            <tr>
+              <td>Almoco executivo</td>
+              <td>Teishoku, missoshiro, sunomono e cha gelado</td>
+              <td>Segunda a sexta</td>
+              <td>R$ 49,90</td>
+            </tr>
+            <tr>
+              <td>Menu casal</td>
+              <td>Combinado de 40 pecas, entrada e sobremesa</td>
+              <td>Domingo</td>
+              <td>R$ 219,90</td>
+            </tr>
+            <tr>
+              <td>Happy hour oriental</td>
+              <td>Gyoza, bao, harumaki e drinks sem alcool</td>
+              <td>Quinta</td>
+              <td>R$ 79,90</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>Nihon no kibo</strong>
+      <p>Rua Sakura, 108 - Liberdade, Sao Paulo</p>
+    </div>
+    <address>
+      <a href="tel:+5511999999999">(11) 99999-9999</a>
+      <a href="mailto:contato@nihonnokibo.com">contato@nihonnokibo.com</a>
+      <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+    </address>
+    <p>&copy; <span data-year></span> Nihon no kibo. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="../src/js/script.js"></script>
+</body>
+</html>
