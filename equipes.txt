@@ -11,4 +11,4 @@ Repositorio:
 https://github.com/DEV-Front-moitinha/CP2-Front_1semestre.git
 
 GitHub Pages:
-preencher o link publicado apos ativar o GitHub Pages
+https://dev-front-moitinha.github.io/CP2-Front_1semestre/
